@@ -1,0 +1,615 @@
+@import url("../plugins/bootstrap/css/bootstrap.css");
+@import url("../plugins/bootstrap/css/bootstrap-theme.css");
+@import url("../plugins/bootstrap-jasny/css/jasny-bootstrap.css");
+@import url("../plugins/font-awesome/css/font-awesome.css");
+
+/*
+Template Name: PhotoTravel
+Version: 1.00.0
+Theme URI: http://themes.Blue-NET.eu/PhotoTravel/
+Author: Blue-NET Mateusz Serwinowski
+Author URI: http://Blue-NET.pl
+Author E-MAIL: biuro@Blue-NET.pl
+License: Custom
+License URI: URI: http://themeforest.net/licenses
+*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2. Helper Class
+3. Header
+//	3.1 Navbar
+//	3.2 Info Box
+4. Offer
+5. Team
+//	5.1 Team Persons
+6. Modern Techniques
+7. Made Projects
+8. Customer Reviews
+9. Footer
+10. Copyright
+
+------------------------------------------------------------------*/
+
+@import "elements.less";
+
+/*------------------------------------------------------------------
+	[1. Body]
+------------------------------------------------------------------*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-smooth: always;
+}
+
+@import "helper.less";
+
+
+
+/*------------------------------------------------------------------
+	[3. Header]
+------------------------------------------------------------------*/
+
+/* 3.1 Header Bar */
+header{
+	min-height:861px;
+	
+	// 3.1 NavBar
+	.navbar-default{
+		background: none;
+		box-shadow: none;
+		margin-top:20px;
+		border: none;
+			
+		.navbar-nav{
+			font-size:11px;
+			li{
+				a{
+					text-transform:uppercase;
+				}
+				
+				&.active a{
+					box-shadow:none;
+					background:none;
+					
+					&:hover{
+						background:none;
+					}
+				}
+			} // .end li
+		} //.end navbar-nav
+		
+		form.navbar-form{
+			input.form-control{
+				background:none;
+				font-size:11px;
+				border-radius:20px 0 0 20px;
+				outline:none;
+				border-right:none;
+			}
+			.input-group-btn .btn-default{
+				text-shadow: none;
+				background:none;
+				border-left:none;
+				outline:none;
+				border-radius:0 20px 20px 0;
+				box-shadow:none;
+			}
+			
+			input.form-control:focus,
+			.input-group-btn .btn-default{
+				outline:none;
+			}
+		} // .end form.navbar-form
+		
+	} // .end navbar-default
+	
+	// 3.2 Info box
+	.info{
+		text-transform:uppercase;
+		text-align:center;
+		font-weight:300;
+		font-size:18px;
+		margin-top:20%;
+		
+		.social{
+			margin-bottom:3%;
+			
+			.icon-twitter,
+			.icon-facebook,
+			.icon-pinterest{
+				background:url(../img/sectionLogo/icon.png) no-repeat center;
+				display:inline-block;
+				width:24px;
+				height:24px;
+				margin-left:10px;
+				margin-right:10px;
+			}
+			
+			.icon-twitter{background-position:left center;}
+			.icon-facebook{background-position:center;}
+			.icon-pinterest{background-position:right center;}
+		}
+		
+		
+		h2{
+			font-size:60px;
+			font-weight:400;
+			margin-bottom:15px;
+			
+			strong{
+				font-weight:600;
+			}
+		}
+		
+		button.btn.btn-lg{
+			background:none;
+			text-transform:uppercase;
+			padding: 20px 55px;
+			margin-top:6%;
+			font-weight:300;
+			font-size:14px;
+			outline:none;
+		}
+		
+	}
+	
+}
+
+
+/*------------------------------------------------------------------
+	[4. Offer]
+------------------------------------------------------------------*/
+
+#offer{
+	padding:80px 0;
+	
+	.row div .icon{
+		border-radius:50%;
+		width:95px;
+		height:87px;
+		margin:auto;
+		padding: 10% 0;
+		text-align: center;
+		
+		i.fa{
+			font-size:32px;
+		}
+	}
+	
+	h5{
+		text-align:center;
+		margin-top:25px;
+		font-size:12px;
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[5. Team]
+------------------------------------------------------------------*/
+#team{
+	min-height:945px;
+	font-size:12px;
+	font-weight:300;
+	padding:45px 0;
+	
+	h3{
+		font-size:30px;
+		font-weight:300;
+		text-transform:uppercase;
+		margin-bottom:25px;
+		
+		strong{
+			display:block;
+			font-size:36px;
+			font-weight:400;
+		}
+	}
+}
+
+// 4.1 Team Persons 
+#team{	
+	.persons{
+		
+		.person{
+			position:relative;
+			padding:0;
+			
+			div.image{
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				display:none;
+				font-size:12px;
+				
+				h5{
+					text-transform:uppercase;
+					font-weight:300;
+					font-size:24px;
+					margin-top:20%;
+					margin-bottom:10%;
+				}
+				.social{
+					position:relative;
+					background:none;
+					margin-top:10%;
+					margin-bottom:15%;
+					
+					.icon-instagram,
+					.icon-facebook,
+					.icon-picassa{
+						display:inline-block;
+						background:url(../img/sectionTeam/icon.png) no-repeat center;
+						width:32px;
+						height:32px;
+						margin:0 10px;
+					}
+					.icon-instagram{
+						background-position:left center;
+					}
+					.icon-picassa{
+						background-position:right center;
+					}
+				}
+				
+				
+				.photo{
+					margin-top:20px;
+				}
+			}
+			&:hover div.image{
+				display:block;
+			}
+		}
+	}
+	
+	#stat1,
+	#stat2,
+	#stat3,
+	#stat4{
+		margin:0 auto;
+	}
+	
+	.stats{
+		h5{
+			text-transform:uppercase;
+			text-align:center;
+			font-weight:300;
+			font-size:14px;
+		}
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[6. Modern Techniques]
+------------------------------------------------------------------*/
+#modern{
+	padding:50px 0;
+	
+	h4{
+		text-transform:uppercase;
+		font-size:30px;
+		font-weight:200;
+		margin-bottom:5%;
+		
+		strong{
+			display:block;
+			font-weight:300;
+			font-size:36px;
+		}
+	}
+	.bx-viewport{
+		background:none;
+		box-shadow:none;
+		border:none;
+				
+		.slide{
+			padding:30px 80px;
+			
+			h5{
+				text-transform:uppercase;
+				font-size:24px;
+				font-weight:300;
+			}
+			
+			ul li{
+				margin:10px 0;
+			}
+			
+			.fa-chevron-circle-right{
+				font-size:20px;
+				margin-right:10px;
+			}
+			
+			.btn-lg{
+				background:none;
+				font-size:14px;
+				font-weight:300;
+				&:focus{
+					outline:none;
+				}
+			}
+			
+		}
+	}
+	
+	
+}
+
+
+/*------------------------------------------------------------------
+	[7. Made Projects]
+------------------------------------------------------------------*/
+#projects{
+	padding:50px 0;
+	font-weight:300;
+	font-size:13px;
+	
+	h4{
+		text-transform:uppercase;
+		font-size:26px;
+		font-weight:300;
+		text-align:center;
+	}
+	
+	.nav{
+		margin-top:5%;
+		
+		a{
+			font-size:12px;
+			padding:10px 25px;
+			border-radius:10px;
+			display:inline-block;
+			text-transform:uppercase;
+		}
+	}
+	
+	#projectsItems{
+		margin-top:50px;
+		
+		.mix{
+			padding:0;
+			display:none;
+			position:relative;
+			
+			.info{
+				padding:0 25px;
+				font-size:13px;
+				
+				h5{
+					font-size:30px;
+					font-weight:300;
+					margin-top:4%;
+					margin-bottom:8%;
+					
+					strong{
+						display:block;
+						font-size:36px;
+						font-weight:300;
+					}
+				}
+				.more{
+					display:block;
+					font-size:12px;
+					padding:10px 0 10px 28px;
+				}
+			}
+			.item{
+				position:absolute;
+				display:none;
+				width:100%;
+				height:100%;
+				top:0;
+				text-transform:uppercase;
+				text-align:center;
+				font-size:11px;
+				transition:all 0.5s ease-in, left 1s, right 1s;
+				
+				h5{
+					text-transform:uppercase;
+					font-size:20px;
+                    margin-top:10%;
+				}
+			
+				.icon-left,
+				.icon-right{
+					position:relative;
+					display:inline-block;
+					border-radius:50%;
+					padding:20px 24px;
+					margin:10% 10px;
+					font-size:14px;
+					transition:all 0.5s ease-in, left 1s, right 1s;
+				}
+			}
+		}
+				
+		.mix:hover .item{
+			display:block;
+		}
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[8. Customer Reviews]
+------------------------------------------------------------------*/
+#reviews{
+	
+	padding:50px 0 80px;
+	
+	h4{
+		font-size:26px;
+		font-weight:300;
+		text-align:center;
+		text-transform:uppercase;
+	}
+	.bx-viewport{
+		background:none;
+		box-shadow:none;
+		border:none;	
+			
+		.bx-reviews{
+			margin-top:5%;
+			.review{
+				padding:0;
+				font-size:14px;
+				font-weight:300;
+				text-align:center;
+				
+				.author{
+					font-size:12px;
+					margin-bottom:6%;
+				}
+			}
+		}
+	}
+			
+			
+	.bx-controls .bx-pager .bx-pager-link{
+		width:13px;
+		height:13px;
+		border-radius:50%;
+	}
+	
+	.bx-controls .bx-controls-direction{
+		
+		.bx-prev{
+			background-position:left top;
+			left:-60px;
+			margin-top:20px;
+		}
+		
+		.bx-next{
+			background-position: right top;
+			right:-60px;
+			margin-top:20px;
+		}
+	}
+	
+}
+
+/*------------------------------------------------------------------
+	[9. Footer]
+------------------------------------------------------------------*/
+
+footer {
+    padding: 40px 0;
+    font-size: 11px;
+    // menu footer after logo
+    .menu-footer {
+
+        li {
+            padding: 15px 0;
+
+            a {
+                font-size: 12px;
+            }
+            //.end a
+            &:last-child {
+                border: none;
+            }
+        }
+        //.end li
+    }
+    //.end menu footer
+    h4 {
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 35px;
+        text-transform: uppercase;
+
+        span {
+            display: inline-block;
+            text-align: center;
+            width: 25px;
+            height: 25px;
+            margin-right: 20px;
+            .rotation(45deg);
+
+            i.fa {
+                padding: 5px;
+                .rotation(-45deg);
+            }
+        }
+    }
+
+    .tweets {
+
+        ul {
+            li {
+                padding: 0 0 25px;
+
+                &:last-child {
+                    padding: 0;
+                }
+
+                strong {
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+
+
+    .recent-post {
+        font-size: 9px;
+
+        h5 {
+            font-size: 11px;
+        }
+
+        .media a {
+            position: relative;
+
+            span {
+                display: block;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .contact-footer {
+        font-size: 12px;
+
+        ul {
+            li {
+                padding: 0 0 25px;
+
+                .fa {
+                    font-size:15px;
+                    padding-right:10px;
+                }
+            }
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------
+	[10. Copyright]
+------------------------------------------------------------------*/
+
+#copyright{
+	padding:80px 0;
+	font-size:11px;
+	 
+	.social{
+		a{
+			border-radius:50%;
+			display:inline-block;
+			padding:5px 8px;
+			width:25px;
+			margin:0 5px;
+		}
+	}
+}
