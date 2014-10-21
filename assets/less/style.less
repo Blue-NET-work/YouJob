@@ -4,12 +4,8 @@
 @import url("../plugins/font-awesome/css/font-awesome.css");
 
 /*
-Template Name: PhotoTravel
+Template Name: YouJob
 Version: 1.00.0
-Theme URI: http://themes.Blue-NET.eu/PhotoTravel/
-Author: Blue-NET Mateusz Serwinowski
-Author URI: http://Blue-NET.pl
-Author E-MAIL: biuro@Blue-NET.pl
 License: Custom
 License URI: URI: http://themeforest.net/licenses
 */
@@ -22,14 +18,17 @@ License URI: URI: http://themeforest.net/licenses
 3. Header
 //	3.1 Navbar
 //	3.2 Info Box
-4. Offer
-5. Team
-//	5.1 Team Persons
-6. Modern Techniques
-7. Made Projects
-8. Customer Reviews
-9. Footer
-10. Copyright
+4. Baner Search
+5. User Find Job
+6. WHY TRUST YOUJOB
+7. NEW JOB
+8. Say About us
+9. Stats
+10. Reviews
+11. Footer
+12. Copyright
+13. Error 404
+14. Contact
 
 ------------------------------------------------------------------*/
 
@@ -40,7 +39,7 @@ License URI: URI: http://themeforest.net/licenses
 ------------------------------------------------------------------*/
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-smooth: always;
 }
 
@@ -52,564 +51,1077 @@ body {
 	[3. Header]
 ------------------------------------------------------------------*/
 
-/* 3.1 Header Bar */
+/* 3.1 Header */
 header{
-	min-height:861px;
 	
-	// 3.1 NavBar
-	.navbar-default{
-		background: none;
-		box-shadow: none;
-		margin-top:20px;
-		border: none;
-			
-		.navbar-nav{
-			font-size:11px;
-			li{
-				a{
-					text-transform:uppercase;
-				}
-				
-				&.active a{
-					box-shadow:none;
-					background:none;
-					
-					&:hover{
-						background:none;
-					}
-				}
-			} // .end li
-		} //.end navbar-nav
-		
-		form.navbar-form{
-			input.form-control{
-				background:none;
-				font-size:11px;
-				border-radius:20px 0 0 20px;
-				outline:none;
-				border-right:none;
-			}
-			.input-group-btn .btn-default{
-				text-shadow: none;
-				background:none;
-				border-left:none;
-				outline:none;
-				border-radius:0 20px 20px 0;
-				box-shadow:none;
-			}
-			
-			input.form-control:focus,
-			.input-group-btn .btn-default{
-				outline:none;
-			}
-		} // .end form.navbar-form
-		
-	} // .end navbar-default
-	
-	// 3.2 Info box
-	.info{
-		text-transform:uppercase;
-		text-align:center;
-		font-weight:300;
-		font-size:18px;
-		margin-top:20%;
-		
-		.social{
-			margin-bottom:3%;
-			
-			.icon-twitter,
-			.icon-facebook,
-			.icon-pinterest{
-				background:url(../img/sectionLogo/icon.png) no-repeat center;
-				display:inline-block;
-				width:24px;
-				height:24px;
-				margin-left:10px;
-				margin-right:10px;
-			}
-			
-			.icon-twitter{background-position:left center;}
-			.icon-facebook{background-position:center;}
-			.icon-pinterest{background-position:right center;}
-		}
-		
-		
-		h2{
-			font-size:60px;
-			font-weight:400;
-			margin-bottom:15px;
-			
-			strong{
-				font-weight:600;
-			}
-		}
-		
-		button.btn.btn-lg{
-			background:none;
-			text-transform:uppercase;
-			padding: 20px 55px;
-			margin-top:6%;
-			font-weight:300;
-			font-size:14px;
-			outline:none;
-		}
-		
+	// 3.1 Top
+	#top{
+		font-size:10px;
+		padding:20px 0 15px;
 	}
 	
-}
-
-
-/*------------------------------------------------------------------
-	[4. Offer]
-------------------------------------------------------------------*/
-
-#offer{
-	padding:80px 0;
+	// 3.2 navbar
 	
-	.row div .icon{
-		border-radius:50%;
-		width:95px;
-		height:87px;
-		margin:auto;
-		padding: 10% 0;
-		text-align: center;
-		
-		i.fa{
-			font-size:32px;
-		}
-	}
-	
-	h5{
-		text-align:center;
-		margin-top:25px;
-		font-size:12px;
-	}
-}
-
-
-/*------------------------------------------------------------------
-	[5. Team]
-------------------------------------------------------------------*/
-#team{
-	min-height:945px;
-	font-size:12px;
-	font-weight:300;
-	padding:45px 0;
-	
-	h3{
-		font-size:30px;
-		font-weight:300;
-		text-transform:uppercase;
-		margin-bottom:25px;
-		
-		strong{
-			display:block;
-			font-size:36px;
-			font-weight:400;
-		}
-	}
-}
-
-// 4.1 Team Persons 
-#team{	
-	.persons{
-		
-		.person{
-			position:relative;
-			padding:0;
-			
-			div.image{
-				position:absolute;
-				top:0;
-				left:0;
-				width:100%;
-				height:100%;
-				display:none;
-				font-size:12px;
-				
-				h5{
-					text-transform:uppercase;
-					font-weight:300;
-					font-size:24px;
-					margin-top:20%;
-					margin-bottom:10%;
-				}
-				.social{
-					position:relative;
-					background:none;
-					margin-top:10%;
-					margin-bottom:15%;
-					
-					.icon-instagram,
-					.icon-facebook,
-					.icon-picassa{
-						display:inline-block;
-						background:url(../img/sectionTeam/icon.png) no-repeat center;
-						width:32px;
-						height:32px;
-						margin:0 10px;
-					}
-					.icon-instagram{
-						background-position:left center;
-					}
-					.icon-picassa{
-						background-position:right center;
-					}
-				}
-				
-				
-				.photo{
-					margin-top:20px;
-				}
-			}
-			&:hover div.image{
-				display:block;
-			}
-		}
-	}
-	
-	#stat1,
-	#stat2,
-	#stat3,
-	#stat4{
-		margin:0 auto;
-	}
-	
-	.stats{
-		h5{
-			text-transform:uppercase;
-			text-align:center;
-			font-weight:300;
-			font-size:14px;
-		}
-	}
-}
-
-
-/*------------------------------------------------------------------
-	[6. Modern Techniques]
-------------------------------------------------------------------*/
-#modern{
-	padding:50px 0;
-	
-	h4{
-		text-transform:uppercase;
-		font-size:30px;
-		font-weight:200;
-		margin-bottom:5%;
-		
-		strong{
-			display:block;
-			font-weight:300;
-			font-size:36px;
-		}
-	}
-	.bx-viewport{
+	.navbar{
 		background:none;
 		box-shadow:none;
 		border:none;
-				
-		.slide{
-			padding:30px 80px;
+	
+		.navbar-brand{
+			height:auto !important;
+		}
+		
+		.navbar-collapse{
+			margin-top:30px;
+		}
+		
+		&.navbar-default .navbar-nav > li > a{
+			font-size:11px;
+			font-weight:500;
+			text-transform: uppercase;
+		}
+		
+		&.navbar-default .navbar-nav > .open > a,
+		&.navbar-default .navbar-nav > .active > a{
+			background: none;
+			border: none;
+			box-shadow: none;
+		}
+		
+		.btn-group{
+			margin-top: 2px;
+			margin-left:80px;
 			
-			h5{
-				text-transform:uppercase;
-				font-size:24px;
-				font-weight:300;
+			a{
+				border:none;
+				font-weight:500;
+				font-size:11px;
+				padding:15px 25px;
 			}
+		}
+	
+	}
+
+}
+
+
+/*------------------------------------------------------------------
+	[4. Baner Search]
+------------------------------------------------------------------*/
+#baner-search{
+	background: url("../img/sliderHome.jpg") center top no-repeat;
+	min-height:595px;
+	
+	.info{
+		font-size:14px;
+		margin-top:150px;
+		
+		h3{
+			font-size:72px;
+			font-weight:400;
 			
-			ul li{
-				margin:10px 0;
-			}
-			
-			.fa-chevron-circle-right{
-				font-size:20px;
-				margin-right:10px;
-			}
-			
-			.btn-lg{
-				background:none;
-				font-size:14px;
-				font-weight:300;
-				&:focus{
-					outline:none;
-				}
-			}
-			
+			span{font-weight:700;}
 		}
 	}
 	
+	.boxsearch{
+		font-size:18px;
+		line-height:40px;
+		font-weight:300;
+		border-radius: 3px;
+		padding:15px 20px;
+		margin-top:230px;
+		margin-bottom:20px;
+		
+		
+		.form-control{
+			font-weight:400;
+			font-size:12px;
+			height:auto;
+			padding:12px 27px 12px 15px;
+			min-width:255px;
+		}
+		
+		.input-group-addon{
+			padding:9px 15px;
+			font-weight:400;
+			font-size:12px;
+		}
+		
+		.btn.btn-default{
+			fot-weight:500;
+			font-size:12px;
+			padding:10px 35px;
+		}
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[5. User Find Job]
+------------------------------------------------------------------*/
+#user-find-job{
+	margin:60px 0;
+
+	.col-md-4{
+		text-align:center;
+		font-size:11px;
+		font-weight:300;
+		
+		h4{
+			font-size:18px;
+			font-weight:400;
+			text-transform: uppercase;
+			margin-top:20px;
+			margin-bottom:20px;
+			
+			span{font-weight:300;}
+		}
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[6. WHY TRUST YOUJOB]
+------------------------------------------------------------------*/
+#why-trust-youjob{
+	margin-bottom:100px;
+
+	.header{
+		font-size:11px;
+		font-weight:300;
+		text-align:center;
+		text-transform: uppercase;
+		margin-bottom:50px;
+		
+		h3{
+			font-weight:300;
+			font-size:36px;
+			margin-bottom:30px;
+		}
+		
+		&:after{
+			position:relative;
+			display:block;
+			width:100px;
+			content:" ";
+			margin:25px auto 0;
+			border-top:5px solid;
+		}
+	}
+	
+	.why-trust-youjob{
+		padding:35px 35px 45px;
+		border-radius: 3px;
+	}
+	
+	.media{
+		text-transform: uppercase;
+		font-size:12px;
+		
+		h4{
+			font-size:18px;	
+			font-weight:400;	
+		}
+		
+		.media-body{
+			padding-left:20px;
+			margin-top:15px;
+		}
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[7. NEW JOB]
+------------------------------------------------------------------*/
+#new-job{
+
+	.header{
+		text-transform: uppercase;
+		margin-bottom:40px;
+		font-size:11px;
+		
+		h3{
+			font-weight:300;
+			font-size:28px;
+		}
+	}
+	
+	.newjob-item{
+		border-radius: 3px;
+		border:1px solid;
+		font-size:11px;
+		
+		h4{
+			font-weight:400;
+			font-size:17.11px;
+		}
+		
+		.img-responsive img{
+			width:100%;
+		}
+	
+	}
+		
+	.newjob-body{
+		padding:25px 15px;
+		
+		.action{
+			.price{
+				font-size:26.52px;
+				font-weight:500;
+				
+				span{
+					text-transform: uppercase;
+					font-size:9.51px;
+					font-weight:300;
+				}
+			}
+			
+			.btn{
+				
+			}
+		}
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[8. Say About us]
+------------------------------------------------------------------*/
+#say-about-us{
+	background:url('../img/bgReview.jpg') center top no-repeat;
+	min-height:400px;
+	margin-bottom:80px;
+	
+	h3{
+		text-transform: uppercase;
+		text-align:center;
+		font-weight:300;
+		font-size:36px;
+		margin-top:50px;
+		
+		span{
+			font-weight:400;
+		}
+		
+		&:after{
+			position:relative;
+			width:100px;
+			border-top:1px solid #d8d8d8;
+			content:" ";
+			display:block;
+			margin:30px auto;
+		}
+	}
+	
+	.bx-wrapper .bx-viewport{
+		background:none;
+		border:none;
+		box-shadow:none;
+		
+	}
+	
+	.bxslider{
+	
+		.say{
+			color:#46535b;
+			font-size:11px;
+			
+			h4{
+				font-size:24px;
+				color:#257fd2;
+				font-style:normal;
+				text-transform: uppercase;
+				margin-bottom:30px;
+				
+				span{
+					display:block;
+					font-weight:300;
+					font-style:italic;
+					font-size:14px;
+					color:#202931;
+					margin-top:10px;
+				}
+			}
+			
+			strong{color:#27333a;}
+		}
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[9. Stats]
+------------------------------------------------------------------*/
+#stats{
+	margin:80px auto;
+	text-transform: uppercase;
+	font-size:10px;
+	
+	.border{
+		border-left:1px solid;
+		padding:20px 15px;
+		
+		&:first-child{border:none;}
+	}
+	
+	h4{
+		font-weight:300;
+		font-size:14px;
+	
+		span{
+			font-size:34px;
+			font-weight:400;
+		}
+	}
+	
+	.btn{
+		text-transform: uppercase;
+		font-weight:400;
+		font-size:14px;
+		color:#1c63a6;
+		background:none;
+		border-color:#d8d8d8;
+		padding:20px;
+		margin:auto;
+		display:block;
+	
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[10. Reviews]
+------------------------------------------------------------------*/
+#reviews{
+	background:url('../img/bgReviews.jpg') center top no-repeat;
+	min-height:368px;
+	
+	h4{
+		margin-top:-25px;
+		
+		span{
+			display:inline-block;
+			padding:14px 15px 13px;
+			font-size:20px;
+			transform:rotate(45deg);
+			border-radius: 10px;
+			
+			i.fa{transform:rotate(-45deg)}
+		}
+	}
+	
+	.bx-wrapper{
+		margin-bottom:70px;
+		
+		.bx-viewport{
+			border:none;
+			background:none;
+			box-shadow:none;
+		}
+	}
+	
+	.bx-reviews{
+		padding:20px 0;
+		
+		.review{
+			text-transform:uppercase;
+			text-align:center;
+			font-weight:300;
+			font-size:16px;
+			padding:85px 0;
+			
+			.author{
+				font-size:16px;
+				a{
+					font-weight:500;
+				}
+			}
+		}
+	}
+	
+	.bx-wrapper .bx-pager.bx-default-pager{
+		
+		a{
+			background:none;
+			display: inline-block;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			text-indent:0px;
+			font-size:0;
+			text-decoration:none;
+		}
+		a:before{
+  			content: "\f099";
+			font-size:16px;
+		}
+		
+	}
+	
+	.bx-controls-direction{
+		display:none;
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[11. Footer]
+------------------------------------------------------------------*/
+
+footer {
+	background:url(../img/bgFooter.jpg) center top no-repeat;
+	min-height:400px;
+	
+	h4{
+		text-transform: uppercase;
+		font-weight:400;
+		font-size:14px;
+		margin-bottom:40px;
+	}
+	
+	.contact-footer{
+		text-transform: uppercase;
+		font-size:10px;
+	
+		h4{
+			margin-top:-5px;
+			margin-bottom:20px;
+			
+			img{
+				margin-left:-15px;
+				padding-right:15px;
+			}
+		}
+		
+		.fa{
+			font-size:25px;
+		}
+		
+		span{font-weight:300;}
+	}
+	
+	.menu-footer{
+		text-transform: uppercase;
+		font-size:9.51px;
+		font-weight:300;
+		
+		li{
+			margin:8px 0;
+			
+			a{
+				text-decoration:none;
+			}
+			 &.active a, a:hover{
+			 	font-weight:400;
+			 }
+		}
+	}
+	
+	.newslette{
+		h6{
+			text-transform: uppercase;
+			font-size:12px;
+			font-weight:400;
+		}
+		
+		input.form-control{
+			max-width:140px;
+		}
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[12. Copyright]
+------------------------------------------------------------------*/
+
+#copyright{
+	text-transform: uppercase;
+	border-top:1px solid;
+	font-size:10px;
+	margin-top:50px;
+	padding-top:50px;
+	padding-bottom:50px;
+	
+	a{
+		font-weight:300;
+		padding-left:10px;
+		padding-right:10px;
+		text-decoration:none;
+		
+		&:hover{
+			font-weight:400;
+		}
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[13. 404]
+------------------------------------------------------------------*/
+#error404{
+	background:url(../img/bg404.jpg) center top no-repeat;
+	min-height:733px;
+	
+	h2{
+		font-weight:500;
+		font-size:200px;
+		text-align:center;
+		margin-left:-200px;
+		margin-top:150px;
+	}
+	
+	h3{
+		font-weight:500;
+		font-size:72px;
+		text-align:center;
+		margin-right:-200px;
+	}
+	
+	input.form-control{
+		min-width:250px;
+	}
+
+}
+
+
+/*------------------------------------------------------------------
+	[14. Contact]
+------------------------------------------------------------------*/
+#contact{
+
+	h1{
+		font-size:18px;
+		font-weight:400;
+	}
+	
+	h2{
+		font-size:16px;
+		font-weight:400;
+	}
+
+	.online-consultation{
+		border-radius: 5px;
+		
+		h4{
+			text-transform: uppercase;
+			font-size:18px;
+			font-weight:300;
+			padding:30px 20px;
+			line-height:26px;
+			
+			span{
+				font-weight:400;
+				display:block;
+			}
+		}
+		
+		img{width:100%;}
+	}
+	
+	.select-forum{
+		border-radius: 5px;
+		padding:30px 20px;
+		margin-top:30px;
+		
+		h4{
+			text-transform: uppercase;
+			font-size:18px;
+			font-weight:300;
+			line-height:26px;
+			
+			span{
+				font-weight:400;
+				display:block;
+			}
+		}
+		
+		ul{
+			font-size:11px;
+			margin-top:20px;
+			
+			li{
+				border-radius: 5px;
+				padding:10px 8px;
+				margin:5px 0;
+			}
+		}
+	
+	}
+	
+	.contact-data{
+		font-weight:300;
+		font-size:11px;
+		padding:20px 0;
+		
+		strong{
+			font-weight:400;
+		}
+		
+		ul{
+			li{
+				margin:20px 0;
+				
+				.fa{
+					font-size:16px;
+				}
+			}
+		}
+		
+	}
+	
+	form{
+	
+		label{
+			font-size:12px;
+			font-weight:300;
+			text-transform: uppercase;
+		}
+		
+		textarea{
+			height:200px;
+		}
+		
+		.btn{
+			text-transform: uppercase;
+			font-weight:300;
+			display:block;
+			margin-left:auto;
+			margin-right:0;
+		}
+		
+	}
+
+}
+
+/* 14.2 Maps Google */
+#maps {
+  min-height: 400px;
+}
+
+
+/*------------------------------------------------------------------
+	[15. breadcrumb]
+------------------------------------------------------------------*/
+.breadcrumb{
+	text-transform: uppercase;
+	font-size:10px;
+	padding:8px 0px;
+	
+	.fa{
+		padding-left:8px;
+		padding-right:8px;
+	}
+	
+	& > li + li:before{
+		display:none;
+	}
+	
+	& .position{
+		padding-right:10px;
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[16. Box]
+------------------------------------------------------------------*/
+.box{
+	text-transform: uppercase;
+	border-radius: 5px;
+	padding:30px;
+	font-size:10px;
+	
+	h4{
+		font-size:18px;
+		font-weight:400;
+		margin-bottom:30px;
+		padding-left:10px;
+	}
+	
+	ul{
+		li{
+			margin:5px 0;
+			padding:5px 10px;
+		
+			a{
+				text-decoration:none;
+			}
+		}
+	}
+	
+	&.recentpost{
+		font-weight:300;
+		
+		.media{
+		
+			& > .pull-left{
+				padding-right:20px;
+			}
+			
+			h4{
+				font-weight:400;
+				font-size:11px;
+				padding-left:0;
+				margin-bottom:10px;
+			}
+			
+			.date{
+				font-size:10px;
+				margin-top:10px;
+			}
+		}
+	}
+	
+	&.faq{
+		
+		ul{
+			li{
+				margin:10px 0;
+				padding:15px 10px;
+			}
+		}
+	}
+	
+	&.questions{
+		text-transform:none;
+		font-size:10px;
+		
+		h4{
+			font-weight:300;
+			span{font-weight:400;}
+		}
+		
+		.box-body{
+			padding:0 10px;
+		}
+		
+		ul{
+			li{
+				border:none;
+				margin:10px 0;
+				padding:15px 0;
+				font-size:18px;
+				font-weight:500;
+				
+				.fa{
+					font-size:45px;
+					margin-left:40px;
+					margin-top:10px;
+				}
+				
+				.call{
+					display:block;
+					font-size:11px;
+					font-weight:500;
+				}
+				
+				.fw300{
+					font-weight:300;
+				}
+			}
+		}
+	}
 	
 }
 
 
 /*------------------------------------------------------------------
-	[7. Made Projects]
+	[17. Offer]
 ------------------------------------------------------------------*/
-#projects{
-	padding:50px 0;
-	font-weight:300;
-	font-size:13px;
+.offer{
+	#baner-search{
+		background:url(../img/bgOffer.jpg) center top no-repeat;
+		min-height:300px;
+		
+		
+		.info{
+			margin-top:185px;
+		
+			h3{
+				font-size:72px;
+				
+				span{
+					font-weight:700;
+					font-size:30px;
+				}
+			}
+		}
+		
+		.boxsearch{
+			margin-top:35px;
+		}
+	}
+}
+
+.box-offer{
+	border-radius: 5px;
+	padding:20px;
+	margin-bottom:20px;
 	
 	h4{
-		text-transform:uppercase;
-		font-size:26px;
-		font-weight:300;
-		text-align:center;
+		text-transform: uppercase;
+		font-size:18px;
+		font-weight:400;
 	}
 	
-	.nav{
-		margin-top:5%;
+	.box-body{
+		font-weight:400;
+		font-size:12px;
+		margin-top:20px;
+	}
+	
+	.box-action{
+		text-transform: uppercase;
+		margin-top:20px;
+		padding-top:20px;
+		font-weight:300;
+		font-size:12px;
 		
-		a{
+		strong{font-weight:400;}
+		
+		.btn{
+			font-weight:500;
 			font-size:12px;
-			padding:10px 25px;
-			border-radius:10px;
-			display:inline-block;
-			text-transform:uppercase;
+		}
+		
+		.time,
+		.price{
+			margin-top:5px;
+		}
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[18. AddOffer]
+------------------------------------------------------------------*/
+.addoffer{
+	#baner-search{
+		background:url(../img/bgAddOffer.jpg) center top no-repeat;
+		min-height:300px;
+		
+		
+		.info{
+			margin-top:120px;
+		
+			h3{
+				font-size:72px;
+				font-weight:400;
+			}
+		}
+		
+		.boxsearch{
+			margin-top:95px;
+		}
+	}
+}
+
+#addoffer{
+
+	border-radius: 5px;
+	padding:30px;
+
+	h1{
+		font-size:18px;
+		font-weight:400;
+		text-transform: uppercase;
+		margin-top:0;
+	}
+	
+	
+	
+	form{
+	
+		label{
+			font-size:12px;
+			font-weight:300;
+			text-transform: uppercase;
+		}
+		
+		textarea{
+			height:280px;
+		}
+		
+		select{
+			text-transform: uppercase;
+		}
+		
+		.btn{
+			text-transform: uppercase;
+			font-weight:300;
+			display:block;
+			margin-left:auto;
+			margin-right:0;
+			width:100%;
+		}
+		
+		.fileinput{
+			width:100%;
+		}
+	}
+
+}
+
+
+/*------------------------------------------------------------------
+	[19. Blog]
+------------------------------------------------------------------*/
+.blog{
+	#baner-search{
+		background:url(../img/bgBlog.jpg) center top no-repeat;
+		min-height:300px;
+		
+		
+		.info{
+			margin-top:120px;
+		
+			h3{
+				font-size:72px;
+				span{
+					font-weight:400;
+				}
+			}
+		}
+		
+		.boxsearch{
+			margin-top:95px;
+		}
+	}
+}
+
+.blog-item{
+	font-weight:300;
+	font-size:11px;
+
+	strong{font-weight:400;}
+
+	h3{
+		font-weight:400;
+		font-size:16px;
+		text-transform: uppercase;
+		margin-top:0;
+	}
+	
+	h4{
+		font-weight:300;
+		font-size:16px;
+		text-transform: uppercase;
+	}
+	
+	.blog-item-icon{
+		padding-right:0;
+		
+		.blog-item-icon-date{
+			display:block;
+			font-weight:500;
+			font-size:9px;
+			text-align:center;
+			padding:10px;
+			
+			span{
+				display:block;
+				font-size:18px;
+			}
+		}
+		
+		.blog-item-icon-comments{
+			display:block;
+			font-weight:500;
+			font-size:18px;
+			text-align:center;
+			padding:14px;
 		}
 	}
 	
-	#projectsItems{
-		margin-top:50px;
+	.blog-item-img{
+		padding-left:0;
 		
-		.mix{
-			padding:0;
-			display:none;
+		.blog-item-action{
+			margin-top:20px;
+		}
+		
+	}	
+	
+	.blog-item-category{
+		font-size:10px;
+		font-weight:300;
+		text-transform: uppercase;
+		margin-bottom:20px;
+		padding-top:20px;
+		
+		&::before{
 			position:relative;
+			display:block;
+			content:" ";
+			width:100px;
+			padding-top:20px;
+		}
+	}
+	
+	.blog-item-action{
+		margin-top:40px;
+		
+		.btn{
+			border-radius:0;
+			padding:10px 17px;
 			
-			.info{
-				padding:0 25px;
-				font-size:13px;
-				
-				h5{
-					font-size:30px;
-					font-weight:300;
-					margin-top:4%;
-					margin-bottom:8%;
-					
-					strong{
-						display:block;
-						font-size:36px;
-						font-weight:300;
-					}
-				}
-				.more{
-					display:block;
-					font-size:12px;
-					padding:10px 0 10px 28px;
-				}
+			&.btn-fav{
+				padding:10px 14px;
 			}
-			.item{
+			
+			&.btn-fb{
+				margin-left:10px;
+			}
+		}
+	}
+	
+	.blog-item-gallery{
+		margin-top:40px;
+	
+		h4{
+			font-size:24px;
+			font-weight:300;
+			text-transform: uppercase;
+			margin-bottom:30px;
+		}
+		
+		a{
+			position:relative;
+			display:block;
+			
+			span{
 				position:absolute;
 				display:none;
 				width:100%;
 				height:100%;
 				top:0;
-				text-transform:uppercase;
+				left:0;
+				font-size:30px;
 				text-align:center;
-				font-size:11px;
-				transition:all 0.5s ease-in, left 1s, right 1s;
-				
-				h5{
-					text-transform:uppercase;
-					font-size:20px;
-                    margin-top:10%;
-				}
-			
-				.icon-left,
-				.icon-right{
-					position:relative;
-					display:inline-block;
-					border-radius:50%;
-					padding:20px 24px;
-					margin:10% 10px;
-					font-size:14px;
-					transition:all 0.5s ease-in, left 1s, right 1s;
-				}
-			}
-		}
-				
-		.mix:hover .item{
-			display:block;
-		}
-	}
-}
-
-
-/*------------------------------------------------------------------
-	[8. Customer Reviews]
-------------------------------------------------------------------*/
-#reviews{
-	
-	padding:50px 0 80px;
-	
-	h4{
-		font-size:26px;
-		font-weight:300;
-		text-align:center;
-		text-transform:uppercase;
-	}
-	.bx-viewport{
-		background:none;
-		box-shadow:none;
-		border:none;	
-			
-		.bx-reviews{
-			margin-top:5%;
-			.review{
-				padding:0;
-				font-size:14px;
 				font-weight:300;
-				text-align:center;
-				
-				.author{
-					font-size:12px;
-					margin-bottom:6%;
-				}
+				padding:20px;
+			}
+			
+			&:hover span{
+				display:block;
 			}
 		}
-	}
-			
-			
-	.bx-controls .bx-pager .bx-pager-link{
-		width:13px;
-		height:13px;
-		border-radius:50%;
-	}
 	
-	.bx-controls .bx-controls-direction{
-		
-		.bx-prev{
-			background-position:left top;
-			left:-60px;
-			margin-top:20px;
-		}
-		
-		.bx-next{
-			background-position: right top;
-			right:-60px;
-			margin-top:20px;
-		}
 	}
-	
-}
 
-/*------------------------------------------------------------------
-	[9. Footer]
-------------------------------------------------------------------*/
-
-footer {
-    padding: 40px 0;
-    font-size: 11px;
-    // menu footer after logo
-    .menu-footer {
-
-        li {
-            padding: 15px 0;
-
-            a {
-                font-size: 12px;
-            }
-            //.end a
-            &:last-child {
-                border: none;
-            }
-        }
-        //.end li
-    }
-    //.end menu footer
-    h4 {
-        font-size: 16px;
-        font-weight: 300;
-        margin-bottom: 35px;
-        text-transform: uppercase;
-
-        span {
-            display: inline-block;
-            text-align: center;
-            width: 25px;
-            height: 25px;
-            margin-right: 20px;
-            .rotation(45deg);
-
-            i.fa {
-                padding: 5px;
-                .rotation(-45deg);
-            }
-        }
-    }
-
-    .tweets {
-
-        ul {
-            li {
-                padding: 0 0 25px;
-
-                &:last-child {
-                    padding: 0;
-                }
-
-                strong {
-                    padding-right: 5px;
-                }
-            }
-        }
-    }
-
-
-    .recent-post {
-        font-size: 9px;
-
-        h5 {
-            font-size: 11px;
-        }
-
-        .media a {
-            position: relative;
-
-            span {
-                display: block;
-                position: absolute;
-                top: 0;
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-
-    .contact-footer {
-        font-size: 12px;
-
-        ul {
-            li {
-                padding: 0 0 25px;
-
-                .fa {
-                    font-size:15px;
-                    padding-right:10px;
-                }
-            }
-        }
-    }
 }
 
 
 /*------------------------------------------------------------------
-	[10. Copyright]
+	[20. Pagination]
 ------------------------------------------------------------------*/
-
-#copyright{
-	padding:80px 0;
-	font-size:11px;
-	 
-	.social{
-		a{
-			border-radius:50%;
-			display:inline-block;
-			padding:5px 8px;
-			width:25px;
-			margin:0 5px;
-		}
-	}
+.pagination{
+	margin-top:40px;
 }

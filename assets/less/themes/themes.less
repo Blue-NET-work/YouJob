@@ -1,10 +1,6 @@
 /*
-Template Name: PhotoTravel
+Template Name: YouJob
 Version: 1.00.0
-Theme URI: http://themes.Blue-NET.eu/PhotoTravel/
-Author: Blue-NET Mateusz Serwinowski
-Author URI: http://Blue-NET.pl
-Author E-MAIL: biuro@Blue-NET.pl
 License: Custom
 License URI: URI: http://themeforest.net/licenses
 */
@@ -15,16 +11,15 @@ License URI: URI: http://themeforest.net/licenses
 1. Body
 2. Helper Class
 3. Header
-//	3.1 Navbar
-//	3.2 Info Box
-4. Offer
-5. Team
-//	5.1 Team Persons
-6. Modern Techniques
-7. Made Projects
-8. Customer Reviews
-9. Footer
-10. Copyright
+4. Baner Search
+5. User Find Job
+6. WHY TRUST YOUJOB
+7. NEW JOB
+8. Say About us
+9. Stats
+10. Reviews
+11. Footer
+12. Copyright
 
 ------------------------------------------------------------------*/
 @import "../elements.less";
@@ -39,50 +34,12 @@ License URI: URI: http://themeforest.net/licenses
 		
 	// Typography color
 		
-		@link: #06f8d5; // top link 
+		@top: #c7c7c7;
 		
-		@color: #5be0cd; // header color
+		@link: #fe5500; // top link register, hover navbar and register button background 
+		@link1: #70baff; // top login background 
 		
-		@color1: #26d5c0; // modern arrow right, reviews author 
-		
-		@color2: #152a31; // modern h4, and typography
-		
-		@themeColor: #51dac6; // offer icon color hover
-			
-		@footerMenu: #00ffd9; // link color active footer menu
-		
-		@footerColor: #dfe6e9; // footer font color
-		
-		@copyright: #53585d; // copyright and footer font color
-		
-		@projects: #72787a; // projects typography color
-		
-		@headerSearch: rgba(255,255,255,0.27); // search icon
-		
-	// Background color
-		@background: #37a5c8; // copyright background social
-		
-		// preson gradient
-		@personStartGrad: rgba(66,89,29,0.8);
-		@personEndGrad: rgba(66,83,42,0.8); 
-		
-		// gradient image portfolio
-		@projectStartGrad: rgba(3,144,185,0.8);
-		@projectEndGrad: rgba(3,178,112,0.8);
-		
-		//reviews paginaion
-		@reviewStartGrad: #ced4d6;
-		@reviewEndGrad: #edf1f2;
-		
-		@reviewActiveStartGrad: #00a2d0;
-		@reviewActiveEndGrad: #00c97b; 
-	
-	// Border color
-		
-		@headerBorder: rgba(255,255,255,0.17);
-		@offerBorder: #dfe4e6;
-		@borderWhite23: rgba(255,255,255,.23);
-
+		@color: #fe5500; // header 
 
 
 /*------------------------------------------------------------------
@@ -100,16 +57,16 @@ body {
 /* 2.4 Pace style 
 ********************************/
 .pace .pace-progress {
-  background: @color;
+  background: @link;
 }
 
 .pace .pace-progress-inner {
-	box-shadow: 0 0 10px @color, 0 0 5px @color;
+	box-shadow: 0 0 10px @link, 0 0 5px @link;
 }
 
 .pace .pace-activity {
-  border-top-color: @color;
-  border-left-color: @color;
+  border-top-color: @link;
+  border-left-color: @link;
 }
 
 
@@ -117,333 +74,786 @@ body {
 	[3. Header]
 ------------------------------------------------------------------*/
 
-/* 3.1 Header Bar */
 header{
-	background:url(../../img/sectionLogo/bg.jpg) no-repeat center fixed;
-	background-size:cover;
+	// 3.1 Top
+	#top{
+		border-bottom:1px solid #f4f4f4;
+		
+		.register{color:@link;}
+	}
 	
-	// 3.1 NavBar
-	.navbar-default{
-		color:@white;
+	// 3.2 navbar
+	.navbar{
+	
+		&.navbar-default .navbar-nav > li > a{
+			color:#5b6b79;
+		}
+		
+		&.navbar-default .navbar-nav > .open > a,
+		&.navbar-default .navbar-nav > li > a:hover,
+		&.navbar-default .navbar-nav > li:hover > a,
+		&.navbar-default .navbar-nav > .active > a{
+			color: @link;
+		}
+		
+		.btn-group{
+			a{
+				color:#fff;
+				
+				&.register{
+					background: @link;
+				}
+				
+				&.login{
+					background: @link1;
+				}
+			}
+		}
+		
+	}
+
+}
+
+
+/*------------------------------------------------------------------
+	[4. Baner Search]
+------------------------------------------------------------------*/
+#baner-search{
+	.info{
+		color:#fff;
+		
+		h3{
+			color:#fff;
+			span{
+				color: @link1;
+			}
+		}
+	}
+	
+	.boxsearch{
+		background: @link;
+		color:#fff;
+		
+		
+		.form-control{
+			border-color:#fff;
+			color:#6e6e6e;
+		}
+		
+		.input-group-addon{
+			background:#fff;
+			border-color:#fff;
+			color:#c1c1c1;
+		}
+		
+		.btn.btn-default{
+			background:none;
+			border-color:#fff;
+			color:#fff;
+		}
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[5. User Find Job]
+------------------------------------------------------------------*/
+#user-find-job{
+
+	.col-md-4{
+		color:#6e7781;
+		
+		h4{
+			color:#27333a;
+		}
+		
+		
+		&:hover h4,	
+		h4:hover{
+			color:@link;
+		}
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[6. WHY TRUST YOUJOB]
+------------------------------------------------------------------*/
+#why-trust-youjob{
+
+	.header{
+		color:#5b666d;
+		
+		h3{
+			color:#919da3;
+			span{color:#27333a;}
+		}
+		
+		&:after{
+			border-color:@link1;
+		}
+	}
+
+	.why-trust-youjob{
+		background:#f7f7f7;
+		border:1px solid #f4f4f4;
+	}
+	
+	.media{
+		color:#b1b1b1;
+		
+		h4{
+			color:#27333a;	
+		}
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[7. NEW JOB]
+------------------------------------------------------------------*/
+#new-job{
+	margin-bottom:80px;
+
+	.header{
+		color:#27333a;
+		
+		h3{
+			color:#27333a;
 			
-		.navbar-nav{
-			li{
-				a{
-					color:@white;
-					
-					&:hover{color:@link;}
+			span{color:#919da3;}
+		}
+		
+		a{
+			color:@link;
+		}
+	}
+	
+	.newjob-item{	
+		border-color:#f3f3f3;
+		color:#b1b1b1;
+		
+		.header{
+			color:#b1b1b1;
+		}
+		
+		h4{
+			color:#27333a;
+		}
+		
+		.newjob-body{
+			.action{
+				.price{
+					color:@link;
+					span{color:#354046;}
 				}
 			
-				&.active a{
-					color:@link;
+				.btn{
+					color:#fff;
+					border:none;
+					background:#257fd2;
 					
 					&:hover{
-						background:none;
-						color:@link;
+						background:@link;
 					}
 				}
-			} //.end li
-		} //.end navbar
-		
-		
-		form.navbar-form{
-			input.form-control{
-				color:@white;
-				border-color:@headerBorder;
 			}
-			.input-group-btn .btn-default{
-				border-color:@headerBorder;
-				color: @headerSearch;
-			}
-			
-		} //.end form.navbar-form
-		
-	}
-	
-	// 3.2 Info box
-	.info{
-		color:@white;
-		
-		h2{
-			color:@white;
-			
-			strong{color:@color;}
 		}
-		
-		button.btn.btn-lg{
-			border:1px solid @headerBorder;
-			color:@white;
-		}
-		
 	}
-	
 }
 
 
 /*------------------------------------------------------------------
-	[4. Offer]
+	[8. Say About us]
 ------------------------------------------------------------------*/
-
-#offer{
+#say-about-us{
 	
-	.row div .icon{
-		border:1px solid @offerBorder;
-		background:@white;
-		
-		i.fa{color:@themeColor;}
-	}
-		
-	.row div:hover .icon{
-		background: @themeColor;
-		
-		i.fa{color:@white;}
-	}
-	
-	
-	h5{
-		text-shadow:1px 1px 1px rgba(0,0,0,0.08);
-		color:#0d3836;
+	h3{
+		color:#919da3;
+		span{color:#257fd2;}
 	}
 }
+
 
 
 /*------------------------------------------------------------------
-	[5. Team]
+	[9. Stats]
 ------------------------------------------------------------------*/
-#team{
-	.gradienthorizontal(#01261e, #012229);
-	color:@white;
-}
-
-// 4.1 Team Persons 
-#team{	
-	.persons{
-		.person{
-			div.image{
-				.gradient45deg(@personStartGrad, @personEndGrad);
-				color:@white;
-				
-				h5{color:@white;}
-			} //.end image div
-		} //.person end
-	}// .end persons
+#stats{
+	color:#272d33;
 	
-	
-	.stats{
-		h5{color:@white;}
+	.border{
+		border-color:#d8d8d8;
 	}
-}
-
-
-/*------------------------------------------------------------------
-	[6. Modern Techniques]
-------------------------------------------------------------------*/
-#modern{
-	border-bottom:1px solid #f1f1f1;
 	
-	h4{color:@color2;}
+	h4{
+		color:#257fd2;
 	
-	.bx-viewport{
-				
-		.slide{
-			color:@color2;
-			
-			.fa-chevron-circle-right{color:@color1;}
-			
-			.btn-lg{
-				border:1px solid #e1e5e5;
-				color:#0d4d4b;
-			}
-			
+		span{
+		}
+		
+		&.color2{
+			color:@link;
 		}
 	}
-	
 }
 
 
 /*------------------------------------------------------------------
-	[7. Made Projects]
-------------------------------------------------------------------*/
-#projects{
-	color:@projects;
-	
-	h4{color:@color2;}
-	
-	.nav{
-		a{color:@projects;}
-		
-		.active{
-			background:@color1;
-			color:@white;
-		}
-	}
-	
-	#projectsItems{
-		
-		.mix{
-			
-			.info{
-				color:@projects;
-				
-				h5{
-					strong{color:@color2;}
-				}
-				
-				.more{
-					background:url(../../img/sectionProjects/more.png) no-repeat center left;
-					color:@color1;
-				}
-			}
-			.item{
-				.gradient45deg(@projectStartGrad, @projectEndGrad);
-				color:@white;
-				
-				h5{color:@white;}
-			
-				.icon-left,
-				.icon-right{
-					background:@white;
-					color:@black;
-				}
-			}
-		}
-			
-	}
-}
-
-
-/*------------------------------------------------------------------
-	[8. Customer Reviews]
+	[10. Reviews]
 ------------------------------------------------------------------*/
 #reviews{
 	
-	h4{color:@color2;}
+	h4{
+		
+		span{
+			background: #0a74c0; /* Old browsers */
+			/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMGE3NGMwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQwYTVlYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+			background: -moz-linear-gradient(-90deg,  #0a74c0 0%, #40a5ec 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#0a74c0), color-stop(100%,#40a5ec)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(-90deg,  #0a74c0 0%,#40a5ec 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(-90deg,  #0a74c0 0%,#40a5ec 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(-90deg,  #0a74c0 0%,#40a5ec 100%); /* IE10+ */
+			background: linear-gradient(135deg,  #0a74c0 0%,#40a5ec 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a74c0', endColorstr='#40a5ec',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 
-	.bx-viewport{
+			color:#fff;
 			
-		.bx-reviews{
-			.review{
-				color: #15262c;
-				
-				.review-quote{
-					background:url(../../img/sectionReview/review.jpg) no-repeat center top;
-					width:100%;
-					min-height:50px;
-					padding-bottom:20px;
-					
-					.fa-quote-left{
-						margin-top:15px;
-						font-size:26px;
-						color:@color1;
-					}
-				}
-				
-				.author{
-					color:@color1;
-				} // end author
-			} // end review
-		}// end bx-reviews
-	} //end bx viewsport
-			
-			
-	.bx-controls .bx-pager .bx-pager-link{
-		.gradient45deg(@reviewStartGrad, @reviewEndGrad);
-		
-		width:13px;
-		height:13px;
-		border-radius:50%;
-		
-		&.active{
-			.gradient45deg(@reviewActiveStartGrad, @reviewActiveEndGrad);
-		}	
-	} // end .bx-controls .bx-pager .bx-pager-link
-	
-	.bx-controls .bx-controls-direction{
-		.bx-prev,
-		.bx-next{
-			background:url(../../img/sectionReview/arrows.png) no-repeat;
-			width:30px;
-			height:30px;
 		}
-	} // end .bx-controls .bx-controls-direction
+	}
+	
+	.bx-wrapper{
+		margin-bottom:70px;
+		
+	}
+	
+	.bx-reviews{
+		
+		.review{
+			color:#fff;
+			
+			.author{
+				a{
+					color:#fff;
+				}
+			}
+		}
+	}
+	
+	.bx-wrapper .bx-pager.bx-default-pager{
+		
+		a{
+			color:#fff;
+		}
+		
+		a:hover,
+		a.active{
+			color:#81c2ff;
+		}
+	}
 	
 }
 
+
 /*------------------------------------------------------------------
-	[9. Footer]
+	[11. Footer]
 ------------------------------------------------------------------*/
 
 footer {
-    background: #010a0e;
-    border-top: 5px solid #e6eaec;
-    color: @footerColor;
-
-    h4 {
-        color: @white;
-
-        span {
-            .gradient45deg(@projectStartGrad, @projectEndGrad);
-        }
-    }
-    // menu footer after logo
-    .menu-footer {
-
-        li {
-            border-bottom: 1px solid @borderWhite23;
-
-            a {
-                color: @white;
-
-                &:hover {
-                    color: @footerMenu;
-                }
-            }
-            //.end a
-            &.active {
-                a {
-                    color: @footerMenu;
-                }
-            }
-        }
-        //.end li
-    }
-    //.end menu footer
-    .tweets {
-        ul {
-            li {
-                strong {
-                    color: @white;
-                }
-            }
-        }
-    }
-
-    .recent-post {
-        color: @white;
-
-        h5 {
-            color: @white;
-        }
-    }
+	
+	h4{
+		color:#27333a;
+	}
+	
+	.contact-footer{
+		color:#4c585f;
+	}
+	
+	.menu-footer{
+		
+		li{
+			
+			a{
+				color:#4c585f;
+			}
+			
+			&.active, a:hover{
+				a{color:#27333a;}
+			}
+		}
+	}
+	
+	.newslette{
+		h6{
+			color:#257fd2;
+		}
+		
+		.btn{
+			border-color:#257fd2;
+			background:#257fd2;
+			color:#fff;
+		}
+	}
 }
 
 
 /*------------------------------------------------------------------
-	[10. Copyright]
+	[12. Copyright]
 ------------------------------------------------------------------*/
 
 #copyright{
-	color:@copyright;	
-
-	 a{color:@copyright;}
-	 
-	.social{
-		a{
-			background:@black;
-			color:@white;
-			
-			&:hover{background:@background;}
+	border-color:#e5e5e5;
+	color:#414c52;
+	
+	a{
+		color:#414c52;
+		
+		&:hover{
+			color:#27333a;
 		}
-	} //.end social
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[13. 404]
+------------------------------------------------------------------*/
+#error404{
+	
+	h2{
+		color:#fff;
+	}
+	
+	h3{
+		color:#fe5500;
+	}
+	
+	input.form-control{
+		background:none;
+		border-color:#fff;
+		border-right:none;
+		color:#fff;
+	}
+	
+	input.form-control::-moz-placeholder,
+	input.form-control:-ms-input-placeholder,
+	input.form-control::-webkit-input-placeholder {
+	  color: #fff;
+	  opacity: 1;
+	}
+	
+	
+	.btn{
+		background:none;
+		border-color:#fff;
+		color:#fff;
+		border-left:none;
+	}
+
+}
+
+
+/*------------------------------------------------------------------
+	[14. Contact]
+------------------------------------------------------------------*/
+#contact{
+
+	h1{
+		color:#fe5a00;
+	}
+	
+	h2{
+		color:#2d3843;
+	}
+
+	.online-consultation{
+		background:#fe5500;
+		
+		h4{
+			color:#fff;
+		}
+	}
+	
+	.select-forum{
+		background:#40a5ec;
+		
+		h4{
+			color:#fff;
+		}
+		
+		ul{
+			
+			li{
+				background:#fff;
+				
+				a{
+					color:#2d3843;
+				}
+			}
+		}
+	
+	}
+	
+	.contact-data{
+		border-right:1px solid #e2e2e2;
+		color:#2d3843;
+		
+		&.border-none{border:none;}
+		
+		ul{
+			li{
+				.fa{
+					color:#d6d6d6;
+				}
+			}
+		}
+		
+	}
+	
+	form{
+	
+		label{
+			.text-info{color:#257fd2;}
+		}
+		
+		input[type="text"],
+		input[type="email"],
+		textarea{
+			border-color:#ececec;
+			box-shadow:none;
+			
+		}
+		
+		.btn{
+			background:#fe5500;
+			border:none;
+			color:#fff;
+			text-shadow:none;
+		}
+		
+	}
+
+}
+
+
+/*------------------------------------------------------------------
+	[15. breadcrumb]
+------------------------------------------------------------------*/
+.breadcrumb{
+	color:#79838e;
+	
+	& > li + li:before{
+		display:none;
+	}
+	a{
+		color:#79838e;
+	}
+	
+	& .active,
+	& .active a{
+		color:#257fd2;
+	}
+	
+	& .position{
+		color:#3f464f;
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[16. Box]
+------------------------------------------------------------------*/
+.box{
+	border:1px solid #ececec;
+	
+	h4{
+		color:#fe5500;
+	}
+	
+	ul{
+		li{
+			border-bottom:1px solid #ececec;
+		
+			a{
+				color:#79838e;
+			}
+			
+			&.active a,
+			& a:hover{
+				color:#257fd2;
+			}
+		}
+	}
+	
+	&.recentpost{
+		color:#2d3843;
+		
+		.media{
+			
+			h4{
+				color:#2d3843;
+			}
+		}
+	}
+	
+	&.faq{
+		background:#257fd2;
+		
+		h4{
+			color:#fff;
+		}
+		
+		ul{
+			li{
+				border-color:#2a8ae2;
+				
+				a{
+					color:#fff;
+				}
+			}
+		}
+	}
+	
+	&.questions{
+		background:#fe5500;
+		color:#fff;
+		
+		h4{
+			color:#fff;
+		}
+		
+		
+		ul{
+			li{
+				border:none;
+				
+				a{
+					color:#fff;
+				}
+			}
+		}
+	}
+	
+}
+
+
+/*------------------------------------------------------------------
+	[17. Offer]
+------------------------------------------------------------------*/
+.offer{
+}
+
+.box-offer{
+	border:1px solid #ececec;
+	
+	h4{
+		color:#27333a;
+	}
+	
+	.box-body{
+		color:#b1b1b1;
+		
+		.addDate{
+			border-left:1px solid #d6d6d6;
+		}
+	}
+	
+	.box-action{
+		border-top:1px solid #f2f2f2;
+		color:#27333a;
+		
+		.btn{
+			color:#fff;
+			text-shadow:none;
+					
+			&.btn-apply{
+				border:none;
+				background:#257fd2;
+			}
+		
+			&.btn-view{
+				border:none;
+				background:#fe5500;
+			}
+		
+		}
+	}
+}
+
+
+/*------------------------------------------------------------------
+	[18. AddOffer]
+------------------------------------------------------------------*/
+.addoffer{
+}
+
+#addoffer{
+
+	border:1px solid #ededed;
+
+	h1{
+		color:#fe5a00;
+	}
+	
+	
+	
+	form{
+	
+		label{
+			.text-info{color:#257fd2;}
+		}
+		
+		input[type="text"],
+		input[type="email"],
+		textarea{
+			border-color:#ececec;
+			box-shadow:none;
+			
+		}
+		
+		.input-group{
+			
+			.form-control{
+				border-right:none;
+			}
+		
+			.input-group-addon{
+				border-color:#ececec;
+				background:none;
+				border-left:none;
+			}
+		}
+		
+		select{
+			background:#fe5500;
+			border:none;
+			color:#fff;
+		}
+		
+		.btn{
+			background:#257fd2;
+			border:none;
+			color:#fff;
+			text-shadow:none;
+		}
+	}
+
+}
+
+
+/*------------------------------------------------------------------
+	[19. Blog]
+------------------------------------------------------------------*/
+.blog{
+}
+
+.blog-item{
+	color:#272d33;
+		
+	a{
+		color:#fe5a00;
+	}
+
+
+	h3{
+		color:#2d3843;
+	}
+	
+	h4{
+		color:#2d3843;
+	}
+	
+	.blog-item-icon{
+		color:#fff;
+		
+		.blog-item-icon-date{
+			background:#70baff;
+		}
+		
+		.blog-item-icon-comments{
+			background:#fe5a00;
+		}
+	}	
+	
+	.blog-item-category{
+		color:#272d33;
+		
+		a{
+			color:#fe5a00;
+		}
+		
+		&::before{
+			border-top:1px solid #d6d6d6;
+		}
+	}
+	
+	.blog-item-action{
+		
+		.btn{
+			background:none;
+			border-color:#eaeaea;
+			color:#cecece;
+		
+			&.btn-more{
+				&:hover{
+					background:#fe5a00;
+					color:#fff;
+				}
+			}
+			
+			&.btn-fav{
+				&:hover{
+					background:#70baff;
+					color:#fff;
+				}
+			}
+			
+			&.btn-fb{
+				&:hover{
+					background:#70baff;
+					color:#fff;
+				}
+				
+			}
+		}
+	}
+	
+	.blog-item-gallery{
+	
+		h4{
+			color:#969ca1;
+		}
+		
+		a{
+			span{
+				background:rgba(255,255,255,0.85);
+				color:#257fd2;
+			}
+		}
+	
+	}
+
+}
+
+
+/*------------------------------------------------------------------
+	[20. Pagination]
+------------------------------------------------------------------*/
+.pagination{
+	color:#626a72;
+	li{
+		a, span{
+			color:#626a72;
+		}
+	}
+	
+	.active{
+		a, a:hover{
+			background:#70baff;
+			border-color:#70baff;
+			color:#fff;
+		}
+	}
 	
 }

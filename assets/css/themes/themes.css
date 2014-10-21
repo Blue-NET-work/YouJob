@@ -1,0 +1,568 @@
+/*
+Template Name: YouJob
+Version: 1.00.0
+License: Custom
+License URI: URI: http://themeforest.net/licenses
+*/
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2. Helper Class
+3. Header
+4. Baner Search
+5. User Find Job
+6. WHY TRUST YOUJOB
+7. NEW JOB
+8. Say About us
+9. Stats
+10. Reviews
+11. Footer
+12. Copyright
+
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+	[1. Body]
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+	[2. Header]
+------------------------------------------------------------------*/
+/* 2.4 Pace style 
+********************************/
+.pace .pace-progress {
+  background: #fe5500;
+}
+.pace .pace-progress-inner {
+  box-shadow: 0 0 10px #fe5500, 0 0 5px #fe5500;
+}
+.pace .pace-activity {
+  border-top-color: #fe5500;
+  border-left-color: #fe5500;
+}
+/*------------------------------------------------------------------
+	[3. Header]
+------------------------------------------------------------------*/
+header #top {
+  border-bottom: 1px solid #f4f4f4;
+}
+header #top .register {
+  color: #fe5500;
+}
+header .navbar.navbar-default .navbar-nav > li > a {
+  color: #5b6b79;
+}
+header .navbar.navbar-default .navbar-nav > .open > a,
+header .navbar.navbar-default .navbar-nav > li > a:hover,
+header .navbar.navbar-default .navbar-nav > li:hover > a,
+header .navbar.navbar-default .navbar-nav > .active > a {
+  color: #fe5500;
+}
+header .navbar .btn-group a {
+  color: #fff;
+}
+header .navbar .btn-group a.register {
+  background: #fe5500;
+}
+header .navbar .btn-group a.login {
+  background: #70baff;
+}
+/*------------------------------------------------------------------
+	[4. Baner Search]
+------------------------------------------------------------------*/
+#baner-search .info {
+  color: #fff;
+}
+#baner-search .info h3 {
+  color: #fff;
+}
+#baner-search .info h3 span {
+  color: #70baff;
+}
+#baner-search .boxsearch {
+  background: #fe5500;
+  color: #fff;
+}
+#baner-search .boxsearch .form-control {
+  border-color: #fff;
+  color: #6e6e6e;
+}
+#baner-search .boxsearch .input-group-addon {
+  background: #fff;
+  border-color: #fff;
+  color: #c1c1c1;
+}
+#baner-search .boxsearch .btn.btn-default {
+  background: none;
+  border-color: #fff;
+  color: #fff;
+}
+/*------------------------------------------------------------------
+	[5. User Find Job]
+------------------------------------------------------------------*/
+#user-find-job .col-md-4 {
+  color: #6e7781;
+}
+#user-find-job .col-md-4 h4 {
+  color: #27333a;
+}
+#user-find-job .col-md-4:hover h4,
+#user-find-job .col-md-4 h4:hover {
+  color: #fe5500;
+}
+/*------------------------------------------------------------------
+	[6. WHY TRUST YOUJOB]
+------------------------------------------------------------------*/
+#why-trust-youjob .header {
+  color: #5b666d;
+}
+#why-trust-youjob .header h3 {
+  color: #919da3;
+}
+#why-trust-youjob .header h3 span {
+  color: #27333a;
+}
+#why-trust-youjob .header:after {
+  border-color: #70baff;
+}
+#why-trust-youjob .why-trust-youjob {
+  background: #f7f7f7;
+  border: 1px solid #f4f4f4;
+}
+#why-trust-youjob .media {
+  color: #b1b1b1;
+}
+#why-trust-youjob .media h4 {
+  color: #27333a;
+}
+/*------------------------------------------------------------------
+	[7. NEW JOB]
+------------------------------------------------------------------*/
+#new-job {
+  margin-bottom: 80px;
+}
+#new-job .header {
+  color: #27333a;
+}
+#new-job .header h3 {
+  color: #27333a;
+}
+#new-job .header h3 span {
+  color: #919da3;
+}
+#new-job .header a {
+  color: #fe5500;
+}
+#new-job .newjob-item {
+  border-color: #f3f3f3;
+  color: #b1b1b1;
+}
+#new-job .newjob-item .header {
+  color: #b1b1b1;
+}
+#new-job .newjob-item h4 {
+  color: #27333a;
+}
+#new-job .newjob-item .newjob-body .action .price {
+  color: #fe5500;
+}
+#new-job .newjob-item .newjob-body .action .price span {
+  color: #354046;
+}
+#new-job .newjob-item .newjob-body .action .btn {
+  color: #fff;
+  border: none;
+  background: #257fd2;
+}
+#new-job .newjob-item .newjob-body .action .btn:hover {
+  background: #fe5500;
+}
+/*------------------------------------------------------------------
+	[8. Say About us]
+------------------------------------------------------------------*/
+#say-about-us h3 {
+  color: #919da3;
+}
+#say-about-us h3 span {
+  color: #257fd2;
+}
+/*------------------------------------------------------------------
+	[9. Stats]
+------------------------------------------------------------------*/
+#stats {
+  color: #272d33;
+}
+#stats .border {
+  border-color: #d8d8d8;
+}
+#stats h4 {
+  color: #257fd2;
+}
+#stats h4.color2 {
+  color: #fe5500;
+}
+/*------------------------------------------------------------------
+	[10. Reviews]
+------------------------------------------------------------------*/
+#reviews h4 span {
+  background: #0a74c0;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMGE3NGMwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQwYTVlYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(-90deg, #0a74c0 0%, #40a5ec 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #0a74c0), color-stop(100%, #40a5ec));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-90deg, #0a74c0 0%, #40a5ec 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-90deg, #0a74c0 0%, #40a5ec 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-90deg, #0a74c0 0%, #40a5ec 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, #0a74c0 0%, #40a5ec 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a74c0', endColorstr='#40a5ec', GradientType=1);
+  /* IE6-8 fallback on horizontal gradient */
+  color: #fff;
+}
+#reviews .bx-wrapper {
+  margin-bottom: 70px;
+}
+#reviews .bx-reviews .review {
+  color: #fff;
+}
+#reviews .bx-reviews .review .author a {
+  color: #fff;
+}
+#reviews .bx-wrapper .bx-pager.bx-default-pager a {
+  color: #fff;
+}
+#reviews .bx-wrapper .bx-pager.bx-default-pager a:hover,
+#reviews .bx-wrapper .bx-pager.bx-default-pager a.active {
+  color: #81c2ff;
+}
+/*------------------------------------------------------------------
+	[11. Footer]
+------------------------------------------------------------------*/
+footer h4 {
+  color: #27333a;
+}
+footer .contact-footer {
+  color: #4c585f;
+}
+footer .menu-footer li a {
+  color: #4c585f;
+}
+footer .menu-footer li.active a,
+footer .menu-footer li a:hover a {
+  color: #27333a;
+}
+footer .newslette h6 {
+  color: #257fd2;
+}
+footer .newslette .btn {
+  border-color: #257fd2;
+  background: #257fd2;
+  color: #fff;
+}
+/*------------------------------------------------------------------
+	[12. Copyright]
+------------------------------------------------------------------*/
+#copyright {
+  border-color: #e5e5e5;
+  color: #414c52;
+}
+#copyright a {
+  color: #414c52;
+}
+#copyright a:hover {
+  color: #27333a;
+}
+/*------------------------------------------------------------------
+	[13. 404]
+------------------------------------------------------------------*/
+#error404 h2 {
+  color: #fff;
+}
+#error404 h3 {
+  color: #fe5500;
+}
+#error404 input.form-control {
+  background: none;
+  border-color: #fff;
+  border-right: none;
+  color: #fff;
+}
+#error404 input.form-control::-moz-placeholder,
+#error404 input.form-control:-ms-input-placeholder,
+#error404 input.form-control::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+#error404 .btn {
+  background: none;
+  border-color: #fff;
+  color: #fff;
+  border-left: none;
+}
+/*------------------------------------------------------------------
+	[14. Contact]
+------------------------------------------------------------------*/
+#contact h1 {
+  color: #fe5a00;
+}
+#contact h2 {
+  color: #2d3843;
+}
+#contact .online-consultation {
+  background: #fe5500;
+}
+#contact .online-consultation h4 {
+  color: #fff;
+}
+#contact .select-forum {
+  background: #40a5ec;
+}
+#contact .select-forum h4 {
+  color: #fff;
+}
+#contact .select-forum ul li {
+  background: #fff;
+}
+#contact .select-forum ul li a {
+  color: #2d3843;
+}
+#contact .contact-data {
+  border-right: 1px solid #e2e2e2;
+  color: #2d3843;
+}
+#contact .contact-data.border-none {
+  border: none;
+}
+#contact .contact-data ul li .fa {
+  color: #d6d6d6;
+}
+#contact form label .text-info {
+  color: #257fd2;
+}
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+  border-color: #ececec;
+  box-shadow: none;
+}
+#contact form .btn {
+  background: #fe5500;
+  border: none;
+  color: #fff;
+  text-shadow: none;
+}
+/*------------------------------------------------------------------
+	[15. breadcrumb]
+------------------------------------------------------------------*/
+.breadcrumb {
+  color: #79838e;
+}
+.breadcrumb > li + li:before {
+  display: none;
+}
+.breadcrumb a {
+  color: #79838e;
+}
+.breadcrumb .active,
+.breadcrumb .active a {
+  color: #257fd2;
+}
+.breadcrumb .position {
+  color: #3f464f;
+}
+/*------------------------------------------------------------------
+	[16. Box]
+------------------------------------------------------------------*/
+.box {
+  border: 1px solid #ececec;
+}
+.box h4 {
+  color: #fe5500;
+}
+.box ul li {
+  border-bottom: 1px solid #ececec;
+}
+.box ul li a {
+  color: #79838e;
+}
+.box ul li.active a,
+.box ul li a:hover {
+  color: #257fd2;
+}
+.box.recentpost {
+  color: #2d3843;
+}
+.box.recentpost .media h4 {
+  color: #2d3843;
+}
+.box.faq {
+  background: #257fd2;
+}
+.box.faq h4 {
+  color: #fff;
+}
+.box.faq ul li {
+  border-color: #2a8ae2;
+}
+.box.faq ul li a {
+  color: #fff;
+}
+.box.questions {
+  background: #fe5500;
+  color: #fff;
+}
+.box.questions h4 {
+  color: #fff;
+}
+.box.questions ul li {
+  border: none;
+}
+.box.questions ul li a {
+  color: #fff;
+}
+/*------------------------------------------------------------------
+	[17. Offer]
+------------------------------------------------------------------*/
+.box-offer {
+  border: 1px solid #ececec;
+}
+.box-offer h4 {
+  color: #27333a;
+}
+.box-offer .box-body {
+  color: #b1b1b1;
+}
+.box-offer .box-body .addDate {
+  border-left: 1px solid #d6d6d6;
+}
+.box-offer .box-action {
+  border-top: 1px solid #f2f2f2;
+  color: #27333a;
+}
+.box-offer .box-action .btn {
+  color: #fff;
+  text-shadow: none;
+}
+.box-offer .box-action .btn.btn-apply {
+  border: none;
+  background: #257fd2;
+}
+.box-offer .box-action .btn.btn-view {
+  border: none;
+  background: #fe5500;
+}
+/*------------------------------------------------------------------
+	[18. AddOffer]
+------------------------------------------------------------------*/
+#addoffer {
+  border: 1px solid #ededed;
+}
+#addoffer h1 {
+  color: #fe5a00;
+}
+#addoffer form label .text-info {
+  color: #257fd2;
+}
+#addoffer form input[type="text"],
+#addoffer form input[type="email"],
+#addoffer form textarea {
+  border-color: #ececec;
+  box-shadow: none;
+}
+#addoffer form .input-group .form-control {
+  border-right: none;
+}
+#addoffer form .input-group .input-group-addon {
+  border-color: #ececec;
+  background: none;
+  border-left: none;
+}
+#addoffer form select {
+  background: #fe5500;
+  border: none;
+  color: #fff;
+}
+#addoffer form .btn {
+  background: #257fd2;
+  border: none;
+  color: #fff;
+  text-shadow: none;
+}
+/*------------------------------------------------------------------
+	[19. Blog]
+------------------------------------------------------------------*/
+.blog-item {
+  color: #272d33;
+}
+.blog-item a {
+  color: #fe5a00;
+}
+.blog-item h3 {
+  color: #2d3843;
+}
+.blog-item h4 {
+  color: #2d3843;
+}
+.blog-item .blog-item-icon {
+  color: #fff;
+}
+.blog-item .blog-item-icon .blog-item-icon-date {
+  background: #70baff;
+}
+.blog-item .blog-item-icon .blog-item-icon-comments {
+  background: #fe5a00;
+}
+.blog-item .blog-item-category {
+  color: #272d33;
+}
+.blog-item .blog-item-category a {
+  color: #fe5a00;
+}
+.blog-item .blog-item-category::before {
+  border-top: 1px solid #d6d6d6;
+}
+.blog-item .blog-item-action .btn {
+  background: none;
+  border-color: #eaeaea;
+  color: #cecece;
+}
+.blog-item .blog-item-action .btn.btn-more:hover {
+  background: #fe5a00;
+  color: #fff;
+}
+.blog-item .blog-item-action .btn.btn-fav:hover {
+  background: #70baff;
+  color: #fff;
+}
+.blog-item .blog-item-action .btn.btn-fb:hover {
+  background: #70baff;
+  color: #fff;
+}
+.blog-item .blog-item-gallery h4 {
+  color: #969ca1;
+}
+.blog-item .blog-item-gallery a span {
+  background: rgba(255, 255, 255, 0.85);
+  color: #257fd2;
+}
+/*------------------------------------------------------------------
+	[20. Pagination]
+------------------------------------------------------------------*/
+.pagination {
+  color: #626a72;
+}
+.pagination li a,
+.pagination li span {
+  color: #626a72;
+}
+.pagination .active a,
+.pagination .active a:hover {
+  background: #70baff;
+  border-color: #70baff;
+  color: #fff;
+}

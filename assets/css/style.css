@@ -1,0 +1,1103 @@
+@import url("../plugins/bootstrap/css/bootstrap.css");
+@import url("../plugins/bootstrap/css/bootstrap-theme.css");
+@import url("../plugins/bootstrap-jasny/css/jasny-bootstrap.css");
+@import url("../plugins/font-awesome/css/font-awesome.css");
+/*
+Template Name: YouJob
+Version: 1.00.0
+License: Custom
+License URI: URI: http://themeforest.net/licenses
+*/
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2. Helper Class
+3. Header
+//	3.1 Navbar
+//	3.2 Info Box
+4. Baner Search
+5. User Find Job
+6. WHY TRUST YOUJOB
+7. NEW JOB
+8. Say About us
+9. Stats
+10. Reviews
+11. Footer
+12. Copyright
+13. Error 404
+14. Contact
+
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+	[1. Body]
+------------------------------------------------------------------*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-smooth: always;
+}
+/*------------------------------------------------------------------
+	[2. Helper Class]
+------------------------------------------------------------------*/
+a:hover,
+a:link,
+a:focus {
+  outline: none;
+}
+.vertical-middle {
+  vertical-align: middle;
+}
+/* 2.1 Margin
+********************************/
+/* margin top */
+.m-t-0 {
+  margin-top: 0px;
+}
+.m-t-10 {
+  margin-top: 10px;
+}
+.m-t-13 {
+  margin-top: 13px;
+}
+.m-t-15 {
+  margin-top: 15px;
+}
+.m-t-20 {
+  margin-top: 20px;
+}
+.m-t-25 {
+  margin-top: 25px;
+}
+.m-t-30 {
+  margin-top: 30px;
+}
+.m-t-35 {
+  margin-top: 35px;
+}
+.m-t-40 {
+  margin-top: 40px;
+}
+.m-t-45 {
+  margin-top: 45px;
+}
+.m-t-50 {
+  margin-top: 50px;
+}
+.m-t-55 {
+  margin-top: 55px;
+}
+.m-t-60 {
+  margin-top: 60px;
+}
+.m-t-65 {
+  margin-top: 65px;
+}
+.m-t-70 {
+  margin-top: 70px;
+}
+.m-t-75 {
+  margin-top: 75px;
+}
+.m-t-80 {
+  margin-top: 80px;
+}
+.m-t-85 {
+  margin-top: 85px;
+}
+.m-t-90 {
+  margin-top: 90px;
+}
+.m-t-95 {
+  margin-top: 95px;
+}
+.m-t-100 {
+  margin-top: 100px;
+}
+/* margin left */
+.m-l-5 {
+  margin-left: 5px;
+}
+.m-l-10 {
+  margin-left: 10px;
+}
+.m-l-15 {
+  margin-left: 15px;
+}
+.m-l-20 {
+  margin-left: 20px;
+}
+.m-l-25 {
+  margin-left: 25px;
+}
+.m-l-30 {
+  margin-left: 30px;
+}
+.m-l-35 {
+  margin-left: 35px;
+}
+.m-l-40 {
+  margin-left: 40px;
+}
+.m-l-45 {
+  margin-left: 45px;
+}
+.m-l-50 {
+  margin-left: 50px;
+}
+.m-l-55 {
+  margin-left: 55px;
+}
+/* margin right */
+.m-r-5 {
+  margin-right: 5px;
+}
+.m-r-10 {
+  margin-right: 10px;
+}
+.m-r-15 {
+  margin-right: 15px;
+}
+.m-r-20 {
+  margin-right: 20px;
+}
+.m-r-25 {
+  margin-right: 25px;
+}
+.m-r-30 {
+  margin-right: 30px;
+}
+.m-r-35 {
+  margin-right: 35px;
+}
+.m-r-40 {
+  margin-right: 40px;
+}
+.m-r-45 {
+  margin-right: 45px;
+}
+.m-r-50 {
+  margin-right: 50px;
+}
+.m-r-55 {
+  margin-right: 55px;
+}
+/* margin bottom */
+.m-b-10 {
+  margin-bottom: 10px;
+}
+.m-b-20 {
+  margin-bottom: 20px;
+}
+.m-b-25 {
+  margin-bottom: 25px;
+}
+.m-b-30 {
+  margin-bottom: 30px;
+}
+.m-b-35 {
+  margin-bottom: 35px;
+}
+.m-b-40 {
+  margin-bottom: 40px;
+}
+.m-b-45 {
+  margin-bottom: 45px;
+}
+.m-b-50 {
+  margin-bottom: 50px;
+}
+.m-b-55 {
+  margin-bottom: 55px;
+}
+.m-b-60 {
+  margin-bottom: 60px;
+}
+.m-b-65 {
+  margin-bottom: 65px;
+}
+.m-b-70 {
+  margin-bottom: 70px;
+}
+.m-b-75 {
+  margin-bottom: 75px;
+}
+.m-b-80 {
+  margin-bottom: 80px;
+}
+.m-b-85 {
+  margin-bottom: 85px;
+}
+/* 2.2 padding
+********************************/
+.padding-5 {
+  padding: 5px;
+}
+.padding-10 {
+  padding: 10px;
+}
+.padding-15 {
+  padding: 15px;
+}
+.padding-20 {
+  padding: 20px;
+}
+.padding-25 {
+  padding: 25px;
+}
+.padding-30 {
+  padding: 30px;
+}
+.padding-35 {
+  padding: 35px;
+}
+.padding-40 {
+  padding: 40px;
+}
+/* 2.3 space
+********************************/
+.space-60 {
+  height: 60px;
+}
+.space-80 {
+  height: 80px;
+}
+.space-100 {
+  height: 100px;
+}
+/*------------------------------------------------------------------
+	[3. Header]
+------------------------------------------------------------------*/
+/* 3.1 Header */
+header #top {
+  font-size: 10px;
+  padding: 20px 0 15px;
+}
+header .navbar {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+header .navbar .navbar-brand {
+  height: auto !important;
+}
+header .navbar .navbar-collapse {
+  margin-top: 30px;
+}
+header .navbar.navbar-default .navbar-nav > li > a {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+header .navbar.navbar-default .navbar-nav > .open > a,
+header .navbar.navbar-default .navbar-nav > .active > a {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+header .navbar .btn-group {
+  margin-top: 2px;
+  margin-left: 80px;
+}
+header .navbar .btn-group a {
+  border: none;
+  font-weight: 500;
+  font-size: 11px;
+  padding: 15px 25px;
+}
+/*------------------------------------------------------------------
+	[4. Baner Search]
+------------------------------------------------------------------*/
+#baner-search {
+  background: url("../img/sliderHome.jpg") center top no-repeat;
+  min-height: 595px;
+}
+#baner-search .info {
+  font-size: 14px;
+  margin-top: 150px;
+}
+#baner-search .info h3 {
+  font-size: 72px;
+  font-weight: 400;
+}
+#baner-search .info h3 span {
+  font-weight: 700;
+}
+#baner-search .boxsearch {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 300;
+  border-radius: 3px;
+  padding: 15px 20px;
+  margin-top: 230px;
+  margin-bottom: 20px;
+}
+#baner-search .boxsearch .form-control {
+  font-weight: 400;
+  font-size: 12px;
+  height: auto;
+  padding: 12px 27px 12px 15px;
+  min-width: 255px;
+}
+#baner-search .boxsearch .input-group-addon {
+  padding: 9px 15px;
+  font-weight: 400;
+  font-size: 12px;
+}
+#baner-search .boxsearch .btn.btn-default {
+  fot-weight: 500;
+  font-size: 12px;
+  padding: 10px 35px;
+}
+/*------------------------------------------------------------------
+	[5. User Find Job]
+------------------------------------------------------------------*/
+#user-find-job {
+  margin: 60px 0;
+}
+#user-find-job .col-md-4 {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 300;
+}
+#user-find-job .col-md-4 h4 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#user-find-job .col-md-4 h4 span {
+  font-weight: 300;
+}
+/*------------------------------------------------------------------
+	[6. WHY TRUST YOUJOB]
+------------------------------------------------------------------*/
+#why-trust-youjob {
+  margin-bottom: 100px;
+}
+#why-trust-youjob .header {
+  font-size: 11px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+#why-trust-youjob .header h3 {
+  font-weight: 300;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+#why-trust-youjob .header:after {
+  position: relative;
+  display: block;
+  width: 100px;
+  content: " ";
+  margin: 25px auto 0;
+  border-top: 5px solid;
+}
+#why-trust-youjob .why-trust-youjob {
+  padding: 35px 35px 45px;
+  border-radius: 3px;
+}
+#why-trust-youjob .media {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+#why-trust-youjob .media h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+#why-trust-youjob .media .media-body {
+  padding-left: 20px;
+  margin-top: 15px;
+}
+/*------------------------------------------------------------------
+	[7. NEW JOB]
+------------------------------------------------------------------*/
+#new-job .header {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-size: 11px;
+}
+#new-job .header h3 {
+  font-weight: 300;
+  font-size: 28px;
+}
+#new-job .newjob-item {
+  border-radius: 3px;
+  border: 1px solid;
+  font-size: 11px;
+}
+#new-job .newjob-item h4 {
+  font-weight: 400;
+  font-size: 17.11px;
+}
+#new-job .newjob-item .img-responsive img {
+  width: 100%;
+}
+#new-job .newjob-body {
+  padding: 25px 15px;
+}
+#new-job .newjob-body .action .price {
+  font-size: 26.52px;
+  font-weight: 500;
+}
+#new-job .newjob-body .action .price span {
+  text-transform: uppercase;
+  font-size: 9.51px;
+  font-weight: 300;
+}
+/*------------------------------------------------------------------
+	[8. Say About us]
+------------------------------------------------------------------*/
+#say-about-us {
+  background: url('../img/bgReview.jpg') center top no-repeat;
+  min-height: 400px;
+  margin-bottom: 80px;
+}
+#say-about-us h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  font-size: 36px;
+  margin-top: 50px;
+}
+#say-about-us h3 span {
+  font-weight: 400;
+}
+#say-about-us h3:after {
+  position: relative;
+  width: 100px;
+  border-top: 1px solid #d8d8d8;
+  content: " ";
+  display: block;
+  margin: 30px auto;
+}
+#say-about-us .bx-wrapper .bx-viewport {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+#say-about-us .bxslider .say {
+  color: #46535b;
+  font-size: 11px;
+}
+#say-about-us .bxslider .say h4 {
+  font-size: 24px;
+  color: #257fd2;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+#say-about-us .bxslider .say h4 span {
+  display: block;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 14px;
+  color: #202931;
+  margin-top: 10px;
+}
+#say-about-us .bxslider .say strong {
+  color: #27333a;
+}
+/*------------------------------------------------------------------
+	[9. Stats]
+------------------------------------------------------------------*/
+#stats {
+  margin: 80px auto;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+#stats .border {
+  border-left: 1px solid;
+  padding: 20px 15px;
+}
+#stats .border:first-child {
+  border: none;
+}
+#stats h4 {
+  font-weight: 300;
+  font-size: 14px;
+}
+#stats h4 span {
+  font-size: 34px;
+  font-weight: 400;
+}
+#stats .btn {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1c63a6;
+  background: none;
+  border-color: #d8d8d8;
+  padding: 20px;
+  margin: auto;
+  display: block;
+}
+/*------------------------------------------------------------------
+	[10. Reviews]
+------------------------------------------------------------------*/
+#reviews {
+  background: url('../img/bgReviews.jpg') center top no-repeat;
+  min-height: 368px;
+}
+#reviews h4 {
+  margin-top: -25px;
+}
+#reviews h4 span {
+  display: inline-block;
+  padding: 14px 15px 13px;
+  font-size: 20px;
+  transform: rotate(45deg);
+  border-radius: 10px;
+}
+#reviews h4 span i.fa {
+  transform: rotate(-45deg);
+}
+#reviews .bx-wrapper {
+  margin-bottom: 70px;
+}
+#reviews .bx-wrapper .bx-viewport {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+#reviews .bx-reviews {
+  padding: 20px 0;
+}
+#reviews .bx-reviews .review {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 85px 0;
+}
+#reviews .bx-reviews .review .author {
+  font-size: 16px;
+}
+#reviews .bx-reviews .review .author a {
+  font-weight: 500;
+}
+#reviews .bx-wrapper .bx-pager.bx-default-pager a {
+  background: none;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-indent: 0px;
+  font-size: 0;
+  text-decoration: none;
+}
+#reviews .bx-wrapper .bx-pager.bx-default-pager a:before {
+  content: "\f099";
+  font-size: 16px;
+}
+#reviews .bx-controls-direction {
+  display: none;
+}
+/*------------------------------------------------------------------
+	[11. Footer]
+------------------------------------------------------------------*/
+footer {
+  background: url(../img/bgFooter.jpg) center top no-repeat;
+  min-height: 400px;
+}
+footer h4 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+footer .contact-footer {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+footer .contact-footer h4 {
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+footer .contact-footer h4 img {
+  margin-left: -15px;
+  padding-right: 15px;
+}
+footer .contact-footer .fa {
+  font-size: 25px;
+}
+footer .contact-footer span {
+  font-weight: 300;
+}
+footer .menu-footer {
+  text-transform: uppercase;
+  font-size: 9.51px;
+  font-weight: 300;
+}
+footer .menu-footer li {
+  margin: 8px 0;
+}
+footer .menu-footer li a {
+  text-decoration: none;
+}
+footer .menu-footer li.active a,
+footer .menu-footer li a:hover {
+  font-weight: 400;
+}
+footer .newslette h6 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+}
+footer .newslette input.form-control {
+  max-width: 140px;
+}
+/*------------------------------------------------------------------
+	[12. Copyright]
+------------------------------------------------------------------*/
+#copyright {
+  text-transform: uppercase;
+  border-top: 1px solid;
+  font-size: 10px;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#copyright a {
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+}
+#copyright a:hover {
+  font-weight: 400;
+}
+/*------------------------------------------------------------------
+	[13. 404]
+------------------------------------------------------------------*/
+#error404 {
+  background: url(../img/bg404.jpg) center top no-repeat;
+  min-height: 733px;
+}
+#error404 h2 {
+  font-weight: 500;
+  font-size: 200px;
+  text-align: center;
+  margin-left: -200px;
+  margin-top: 150px;
+}
+#error404 h3 {
+  font-weight: 500;
+  font-size: 72px;
+  text-align: center;
+  margin-right: -200px;
+}
+#error404 input.form-control {
+  min-width: 250px;
+}
+/*------------------------------------------------------------------
+	[14. Contact]
+------------------------------------------------------------------*/
+#contact h1 {
+  font-size: 18px;
+  font-weight: 400;
+}
+#contact h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+#contact .online-consultation {
+  border-radius: 5px;
+}
+#contact .online-consultation h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 30px 20px;
+  line-height: 26px;
+}
+#contact .online-consultation h4 span {
+  font-weight: 400;
+  display: block;
+}
+#contact .online-consultation img {
+  width: 100%;
+}
+#contact .select-forum {
+  border-radius: 5px;
+  padding: 30px 20px;
+  margin-top: 30px;
+}
+#contact .select-forum h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+}
+#contact .select-forum h4 span {
+  font-weight: 400;
+  display: block;
+}
+#contact .select-forum ul {
+  font-size: 11px;
+  margin-top: 20px;
+}
+#contact .select-forum ul li {
+  border-radius: 5px;
+  padding: 10px 8px;
+  margin: 5px 0;
+}
+#contact .contact-data {
+  font-weight: 300;
+  font-size: 11px;
+  padding: 20px 0;
+}
+#contact .contact-data strong {
+  font-weight: 400;
+}
+#contact .contact-data ul li {
+  margin: 20px 0;
+}
+#contact .contact-data ul li .fa {
+  font-size: 16px;
+}
+#contact form label {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+#contact form textarea {
+  height: 200px;
+}
+#contact form .btn {
+  text-transform: uppercase;
+  font-weight: 300;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+/* 14.2 Maps Google */
+#maps {
+  min-height: 400px;
+}
+/*------------------------------------------------------------------
+	[15. breadcrumb]
+------------------------------------------------------------------*/
+.breadcrumb {
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 8px 0px;
+}
+.breadcrumb .fa {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.breadcrumb > li + li:before {
+  display: none;
+}
+.breadcrumb .position {
+  padding-right: 10px;
+}
+/*------------------------------------------------------------------
+	[16. Box]
+------------------------------------------------------------------*/
+.box {
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 30px;
+  font-size: 10px;
+}
+.box h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+.box ul li {
+  margin: 5px 0;
+  padding: 5px 10px;
+}
+.box ul li a {
+  text-decoration: none;
+}
+.box.recentpost {
+  font-weight: 300;
+}
+.box.recentpost .media > .pull-left {
+  padding-right: 20px;
+}
+.box.recentpost .media h4 {
+  font-weight: 400;
+  font-size: 11px;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+.box.recentpost .media .date {
+  font-size: 10px;
+  margin-top: 10px;
+}
+.box.faq ul li {
+  margin: 10px 0;
+  padding: 15px 10px;
+}
+.box.questions {
+  text-transform: none;
+  font-size: 10px;
+}
+.box.questions h4 {
+  font-weight: 300;
+}
+.box.questions h4 span {
+  font-weight: 400;
+}
+.box.questions .box-body {
+  padding: 0 10px;
+}
+.box.questions ul li {
+  border: none;
+  margin: 10px 0;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.box.questions ul li .fa {
+  font-size: 45px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.box.questions ul li .call {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+}
+.box.questions ul li .fw300 {
+  font-weight: 300;
+}
+/*------------------------------------------------------------------
+	[17. Offer]
+------------------------------------------------------------------*/
+.offer #baner-search {
+  background: url(../img/bgOffer.jpg) center top no-repeat;
+  min-height: 300px;
+}
+.offer #baner-search .info {
+  margin-top: 185px;
+}
+.offer #baner-search .info h3 {
+  font-size: 72px;
+}
+.offer #baner-search .info h3 span {
+  font-weight: 700;
+  font-size: 30px;
+}
+.offer #baner-search .boxsearch {
+  margin-top: 35px;
+}
+.box-offer {
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.box-offer h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+}
+.box-offer .box-body {
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.box-offer .box-action {
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-weight: 300;
+  font-size: 12px;
+}
+.box-offer .box-action strong {
+  font-weight: 400;
+}
+.box-offer .box-action .btn {
+  font-weight: 500;
+  font-size: 12px;
+}
+.box-offer .box-action .time,
+.box-offer .box-action .price {
+  margin-top: 5px;
+}
+/*------------------------------------------------------------------
+	[18. AddOffer]
+------------------------------------------------------------------*/
+.addoffer #baner-search {
+  background: url(../img/bgAddOffer.jpg) center top no-repeat;
+  min-height: 300px;
+}
+.addoffer #baner-search .info {
+  margin-top: 120px;
+}
+.addoffer #baner-search .info h3 {
+  font-size: 72px;
+  font-weight: 400;
+}
+.addoffer #baner-search .boxsearch {
+  margin-top: 95px;
+}
+#addoffer {
+  border-radius: 5px;
+  padding: 30px;
+}
+#addoffer h1 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+#addoffer form label {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+#addoffer form textarea {
+  height: 280px;
+}
+#addoffer form select {
+  text-transform: uppercase;
+}
+#addoffer form .btn {
+  text-transform: uppercase;
+  font-weight: 300;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  width: 100%;
+}
+#addoffer form .fileinput {
+  width: 100%;
+}
+/*------------------------------------------------------------------
+	[19. Blog]
+------------------------------------------------------------------*/
+.blog #baner-search {
+  background: url(../img/bgBlog.jpg) center top no-repeat;
+  min-height: 300px;
+}
+.blog #baner-search .info {
+  margin-top: 120px;
+}
+.blog #baner-search .info h3 {
+  font-size: 72px;
+}
+.blog #baner-search .info h3 span {
+  font-weight: 400;
+}
+.blog #baner-search .boxsearch {
+  margin-top: 95px;
+}
+.blog-item {
+  font-weight: 300;
+  font-size: 11px;
+}
+.blog-item strong {
+  font-weight: 400;
+}
+.blog-item h3 {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.blog-item h4 {
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.blog-item .blog-item-icon {
+  padding-right: 0;
+}
+.blog-item .blog-item-icon .blog-item-icon-date {
+  display: block;
+  font-weight: 500;
+  font-size: 9px;
+  text-align: center;
+  padding: 10px;
+}
+.blog-item .blog-item-icon .blog-item-icon-date span {
+  display: block;
+  font-size: 18px;
+}
+.blog-item .blog-item-icon .blog-item-icon-comments {
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  padding: 14px;
+}
+.blog-item .blog-item-img {
+  padding-left: 0;
+}
+.blog-item .blog-item-img .blog-item-action {
+  margin-top: 20px;
+}
+.blog-item .blog-item-category {
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+.blog-item .blog-item-category::before {
+  position: relative;
+  display: block;
+  content: " ";
+  width: 100px;
+  padding-top: 20px;
+}
+.blog-item .blog-item-action {
+  margin-top: 40px;
+}
+.blog-item .blog-item-action .btn {
+  border-radius: 0;
+  padding: 10px 17px;
+}
+.blog-item .blog-item-action .btn.btn-fav {
+  padding: 10px 14px;
+}
+.blog-item .blog-item-action .btn.btn-fb {
+  margin-left: 10px;
+}
+.blog-item .blog-item-gallery {
+  margin-top: 40px;
+}
+.blog-item .blog-item-gallery h4 {
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.blog-item .blog-item-gallery a {
+  position: relative;
+  display: block;
+}
+.blog-item .blog-item-gallery a span {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 300;
+  padding: 20px;
+}
+.blog-item .blog-item-gallery a:hover span {
+  display: block;
+}
+/*------------------------------------------------------------------
+	[20. Pagination]
+------------------------------------------------------------------*/
+.pagination {
+  margin-top: 40px;
+}
+/*# sourceMappingURL=style.css.map */
